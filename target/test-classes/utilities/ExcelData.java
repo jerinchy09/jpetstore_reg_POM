@@ -4,6 +4,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
+import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
@@ -21,6 +22,9 @@ public class ExcelData {
 		XSSFWorkbook workbook =new XSSFWorkbook(fis);
 		XSSFSheet sheet = workbook.getSheetAt(0);
 		
+		//random string generator fr username 
+		//String un = RandomStringUtils.randomAlphabetic(3); 
+		
 		Row row = sheet.getRow(1);
 		
 		Cell cell1 = row.getCell(0);
@@ -31,13 +35,11 @@ public class ExcelData {
 		
 		Cell cell3 = row.getCell(2);
 		String rep_password= cell3.getStringCellValue();
-//		System.out.println(password);
 		
 		data[0]=username;		
 		data[1]=password;
 		data[2]=rep_password;
-
-//		System.out.println(data[1]);
+		
 		return data;
 		
 	}

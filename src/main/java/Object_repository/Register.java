@@ -47,7 +47,6 @@ public class Register {
 	}
 	//Passing from @DataProvider in App.test
 	public void valid_reg_accountInfo(String fn,String ln,String em,String phn, String add1,String add2,String ct,String st,String zp,String cntr) {
-		
 	
 		driver.findElement(firstname).sendKeys(fn);
 		driver.findElement(lastname).sendKeys(ln);

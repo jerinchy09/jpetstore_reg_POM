@@ -13,7 +13,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class cross_browser {
 	WebDriver driver;
-	String filepath = "E:\\Nexvalli\\Eclipse Wrokspace\\POM_petstore\\config.properties";
+	String filepath = "E:\\Nexvalli\\Eclipse Wrokspace\\jpetstore_reg_POM\\config.properties";
 
 	//public WebDriver browser_inititate(String browser) throws IOException {		
 	public WebDriver browser_inititate() throws IOException {		

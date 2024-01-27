@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-25T09:24:40 EST" name="Default suite" finished-at="2024-01-25T09:24:56 EST" duration-ms="15904">
+  <suite started-at="2024-01-26T11:31:28 EST" name="Default suite" finished-at="2024-01-26T11:31:51 EST" duration-ms="22465">
     <groups>
     </groups>
-    <test started-at="2024-01-25T09:24:40 EST" name="Default test" finished-at="2024-01-25T09:24:56 EST" duration-ms="15904">
+    <test started-at="2024-01-26T11:31:28 EST" name="Default test" finished-at="2024-01-26T11:31:51 EST" duration-ms="22465">
       <class name="jpetstore_reg_POM.jpetstore_reg_POM.AppTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:jpetstore_reg_POM.jpetstore_reg_POM.AppTest@71d44a3]" started-at="2024-01-25T09:24:40 EST" name="setup" finished-at="2024-01-25T09:24:46 EST" duration-ms="5864" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:jpetstore_reg_POM.jpetstore_reg_POM.AppTest@65fb9ffc]" started-at="2024-01-26T11:31:29 EST" name="setup" finished-at="2024-01-26T11:31:36 EST" duration-ms="7687" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="valid_application(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:jpetstore_reg_POM.jpetstore_reg_POM.AppTest@71d44a3]" started-at="2024-01-25T09:24:46 EST" name="valid_application" data-provider="accountInfo" finished-at="2024-01-25T09:24:55 EST" duration-ms="8835" status="FAIL">
+        <test-method signature="valid_application(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:jpetstore_reg_POM.jpetstore_reg_POM.AppTest@65fb9ffc]" started-at="2024-01-26T11:31:36 EST" name="valid_application" data-provider="accountInfo" finished-at="2024-01-26T11:31:44 EST" duration-ms="7367" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[jjon]]>
+                <![CDATA[jkjff]]>
               </value>
             </param>
             <param index="1">
@@ -25,7 +25,7 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[ji@gmail.com]]>
+                <![CDATA[kkj@gmail.com]]>
               </value>
             </param>
             <param index="3">
@@ -63,54 +63,77 @@
                 <![CDATA[USA]]>
               </value>
             </param>
+            <param index="10">
+              <value>
+                <![CDATA[public void jpetstore_reg_POM.jpetstore_reg_POM.AppTest.valid_application(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.InterruptedException,java.io.IOException]]>
+              </value>
+            </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Assertion failed: Actual and Expected values are not equal expected [https://petstore.octoperf.com/actions/Catalog.action] but found [https://petstore.octoperf.com/actions/Account.action]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Assertion failed: Actual and Expected values are not equal expected [https://petstore.octoperf.com/actions/Catalog.action] but found [https://petstore.octoperf.com/actions/Account.action]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at jpetstore_reg_POM.jpetstore_reg_POM.AppTest.valid_application(AppTest.java:128)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- valid_application -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:jpetstore_reg_POM.jpetstore_reg_POM.AppTest@71d44a3]" started-at="2024-01-25T09:24:55 EST" name="teardown" finished-at="2024-01-25T09:24:56 EST" duration-ms="1059" status="PASS">
+        <test-method signature="invalid_application(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:jpetstore_reg_POM.jpetstore_reg_POM.AppTest@65fb9ffc]" started-at="2024-01-26T11:31:44 EST" name="invalid_application" data-provider="Invalid_accountInfo" finished-at="2024-01-26T11:31:49 EST" depends-on-methods="jpetstore_reg_POM.jpetstore_reg_POM.AppTest.valid_application" duration-ms="5079" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[gff]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[tas]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[NC,Usa]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[CLT]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[NC]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[USA]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[public void jpetstore_reg_POM.jpetstore_reg_POM.AppTest.invalid_application(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.InterruptedException,java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalid_application -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:jpetstore_reg_POM.jpetstore_reg_POM.AppTest@65fb9ffc]" started-at="2024-01-26T11:31:49 EST" name="teardown" finished-at="2024-01-26T11:31:51 EST" duration-ms="2227" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
