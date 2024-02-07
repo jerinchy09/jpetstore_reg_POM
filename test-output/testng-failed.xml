@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="ChromeTest(failed)">
+    <parameter name="browser" value="Chrome"/>
     <classes>
       <class name="jpetstore_reg_POM.jpetstore_reg_POM.AppTest">
         <methods>
@@ -12,5 +13,31 @@
         </methods>
       </class> <!-- jpetstore_reg_POM.jpetstore_reg_POM.AppTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- ChromeTest(failed) -->
+  <test thread-count="5" name="FirefoxTest(failed)">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="jpetstore_reg_POM.jpetstore_reg_POM.AppTest">
+        <methods>
+          <include name="invalid_application" invocation-numbers="0"/>
+          <include name="valid_application"/>
+          <include name="setup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- jpetstore_reg_POM.jpetstore_reg_POM.AppTest -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+  <test thread-count="5" name="EdgeTest(failed)">
+    <parameter name="browser" value="Edge"/>
+    <classes>
+      <class name="jpetstore_reg_POM.jpetstore_reg_POM.AppTest">
+        <methods>
+          <include name="invalid_application" invocation-numbers="0"/>
+          <include name="valid_application"/>
+          <include name="setup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- jpetstore_reg_POM.jpetstore_reg_POM.AppTest -->
+    </classes>
+  </test> <!-- EdgeTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

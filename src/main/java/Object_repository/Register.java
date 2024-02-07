@@ -47,16 +47,25 @@ public class Register {
 	}
 	//Passing from @DataProvider in App.test
 	public void valid_reg_accountInfo(String fn,String ln,String em,String phn, String add1,String add2,String ct,String st,String zp,String cntr) {
-	
+		driver.findElement(firstname).clear();
 		driver.findElement(firstname).sendKeys(fn);
+		driver.findElement(lastname).clear();
 		driver.findElement(lastname).sendKeys(ln);
+		driver.findElement(email).clear();
 		driver.findElement(email).sendKeys(em);
+		driver.findElement(phone).clear();
 		driver.findElement(phone).sendKeys(phn);
+		driver.findElement(address1).clear();
 		driver.findElement(address1).sendKeys(add1);
+		driver.findElement(address2).clear();
 		driver.findElement(address2).sendKeys(add2);
+		driver.findElement(city).clear();
 		driver.findElement(city).sendKeys(ct);
+		driver.findElement(state).clear();
 		driver.findElement(state).sendKeys(st);
+		driver.findElement(zip).clear();
 		driver.findElement(zip).sendKeys(zp);
+		driver.findElement(country).clear();
 		driver.findElement(country).sendKeys(cntr);	
 	}
 	

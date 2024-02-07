@@ -6,11 +6,38 @@
     <classes>
       <class name="jpetstore_reg_POM.jpetstore_reg_POM.AppTest">
         <methods>
-          <include name="valid_application" invocation-numbers="0"/>
+          <include name="invalid_application" invocation-numbers="0"/>
+          <include name="valid_application"/>
           <include name="setup"/>
           <include name="teardown"/>
         </methods>
       </class> <!-- jpetstore_reg_POM.jpetstore_reg_POM.AppTest -->
     </classes>
   </test> <!-- ChromeTest(failed) -->
+  <test thread-count="5" name="FirefoxTest(failed)">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="jpetstore_reg_POM.jpetstore_reg_POM.AppTest">
+        <methods>
+          <include name="invalid_application" invocation-numbers="0"/>
+          <include name="valid_application"/>
+          <include name="setup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- jpetstore_reg_POM.jpetstore_reg_POM.AppTest -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+  <test thread-count="5" name="EdgeTest(failed)">
+    <parameter name="browser" value="Edge"/>
+    <classes>
+      <class name="jpetstore_reg_POM.jpetstore_reg_POM.AppTest">
+        <methods>
+          <include name="invalid_application" invocation-numbers="0"/>
+          <include name="valid_application"/>
+          <include name="setup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- jpetstore_reg_POM.jpetstore_reg_POM.AppTest -->
+    </classes>
+  </test> <!-- EdgeTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

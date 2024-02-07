@@ -49,11 +49,11 @@ public class AppTest
 	String url;
 	
 	@BeforeTest
-	//@Parameters("browser")
-	public void setup() throws IOException {
+	@Parameters("browser")
+	public void setup(String b) throws IOException {
 		//browser setup
 		cross_browser br= new cross_browser();
-		this.driver = br.browser_inititate();	
+		this.driver = br.browser_inititate(b);	
 		this.url=driver.getCurrentUrl();
 		//extent report setup
 		report= new ExtentReports();
@@ -126,7 +126,7 @@ public class AppTest
 		}	
 	}
 	
-	@Test( dependsOnMethods={"valid_application"},dataProvider = "Invalid_accountInfo", dataProviderClass = dataProvider.class)
+	@Test(dependsOnMethods={"valid_application"},dataProvider = "Invalid_accountInfo", dataProviderClass = dataProvider.class)
 	public void invalid_application(String fn,String ln,String email,String phn, String add1,String add2,String city,String state,String zip,String country, Method method) throws InterruptedException, IOException {		
 	
 		Homepage hm = new Homepage(driver);
@@ -140,7 +140,8 @@ public class AppTest
 		//get the data from Excel file		
 		Register reg = new Register(driver);
 		ExcelData d = new ExcelData();
-		data=d.readExcel();		String user = data[0];
+		data=d.readExcel();		
+		String user = data[0];
 		String pass = data[1];
 		String rep_pass = data[2];
 		

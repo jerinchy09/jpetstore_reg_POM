@@ -16,16 +16,16 @@ public class cross_browser {
 	String filepath = "E:\\Nexvalli\\Eclipse Wrokspace\\jpetstore_reg_POM\\config.properties";
 
 	//public WebDriver browser_inititate(String browser) throws IOException {		
-	public WebDriver browser_inititate() throws IOException {		
+	public WebDriver browser_inititate(String b) throws IOException {		
 	
 		FileInputStream fis = new FileInputStream(filepath);		
 		Properties p = new Properties();
 		p.load(fis);
 		
 		//System.out.println(browser);
-		 String browsername = p.getProperty("browser");
+		 //String browsername = p.getProperty("browser");
 		 String url = p.getProperty("url");
-		 switch(browsername) {
+		 switch(b) {
 			case "Chrome":
 			{
 				driver = new ChromeDriver();

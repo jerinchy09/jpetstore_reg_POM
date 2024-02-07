@@ -7,7 +7,7 @@ public class dataProvider {
 	@DataProvider(name="accountInfo")
 	public static Object[][] dataprov(){
 		return new Object[][] {
-			new Object[] {"jkjff","tas","kkj@gmail.com","123","NC,Usa","","CLT","NC","123","USA"}
+			new Object[] {"zara","tasnim","zara@gmail.com","123","NC,Usa","","CLT","NC","123","USA"}
 		};
 	}
 	@DataProvider(name="Invalid_accountInfo")
