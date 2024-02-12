@@ -15,11 +15,11 @@ public class Login {
 		this.driver = driver;
 	}
 	public void login_credentials(String user, String pass) {
-		driver.findElement(username).clear();
-		driver.findElement(username).sendKeys(user);
-		driver.findElement(password).clear();
-		driver.findElement(password).sendKeys(pass);
-		driver.findElement(login_button).click();
+//		driver.findElement(username).clear();
+//		driver.findElement(username).sendKeys(user);
+//		driver.findElement(password).clear();
+//		driver.findElement(password).sendKeys(pass);
+//		driver.findElement(login_button).click();
 	}
 
 	public void register() {
