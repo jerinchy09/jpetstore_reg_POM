@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-12T10:41:27 EST" name="Suite" finished-at="2024-02-12T10:41:43 EST" duration-ms="16157">
+  <suite started-at="2024-02-17T12:50:23 EST" name="Suite" finished-at="2024-02-17T12:50:46 EST" duration-ms="23071">
     <groups>
     </groups>
-    <test started-at="2024-02-12T10:41:27 EST" name="Test" finished-at="2024-02-12T10:41:43 EST" duration-ms="16157">
+    <test started-at="2024-02-17T12:50:23 EST" name="Test" finished-at="2024-02-17T12:50:46 EST" duration-ms="23071">
       <class name="jpetstore_reg_POM.jpetstore_reg_POM.AppTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:jpetstore_reg_POM.jpetstore_reg_POM.AppTest@28701274]" started-at="2024-02-12T10:41:27 EST" name="setup" finished-at="2024-02-12T10:41:32 EST" duration-ms="5108" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:jpetstore_reg_POM.jpetstore_reg_POM.AppTest@28701274]" started-at="2024-02-17T12:50:23 EST" name="setup" finished-at="2024-02-17T12:50:29 EST" duration-ms="5992" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="valid_application(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:jpetstore_reg_POM.jpetstore_reg_POM.AppTest@28701274]" started-at="2024-02-12T10:41:32 EST" name="valid_application" data-provider="accountInfo" finished-at="2024-02-12T10:41:41 EST" duration-ms="8996" status="PASS">
+        <test-method signature="valid_application(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:jpetstore_reg_POM.jpetstore_reg_POM.AppTest@28701274]" started-at="2024-02-17T12:50:29 EST" name="valid_application" data-provider="accountInfo" finished-at="2024-02-17T12:50:38 EST" duration-ms="9317" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -79,7 +79,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- valid_application -->
-        <test-method signature="invalid_application(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:jpetstore_reg_POM.jpetstore_reg_POM.AppTest@28701274]" started-at="2024-02-12T10:41:41 EST" name="invalid_application" data-provider="Invalid_accountInfo" finished-at="2024-02-12T10:41:41 EST" depends-on-methods="jpetstore_reg_POM.jpetstore_reg_POM.AppTest.valid_application" duration-ms="57" status="FAIL">
+        <test-method signature="invalid_application(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:jpetstore_reg_POM.jpetstore_reg_POM.AppTest@28701274]" started-at="2024-02-17T12:50:38 EST" name="invalid_application" data-provider="Invalid_accountInfo" finished-at="2024-02-17T12:50:45 EST" depends-on-methods="jpetstore_reg_POM.jpetstore_reg_POM.AppTest.valid_application" duration-ms="6785" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -137,28 +137,28 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="MenuContent"]/a[2]"}
-  (Session info: chrome=121.0.6167.161)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=121.0.6167.184)
 Build info: version: '4.16.1', revision: '9b4c83354e'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c5fd807834168ff0bb02d6afa6b885e1, findElement {using=xpath, value=//*[@id="MenuContent"]/a[2]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56124}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56124/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c5fd807834168ff0bb02d6afa6b885e1]]>
+Command: [28f0a94c95859b52f929a40584694c73, getCurrentUrl {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.184, chrome: {chromedriverVersion: 121.0.6167.184 (057a8ae7deb..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60707}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60707/devtoo..., se:cdpVersion: 121.0.6167.184, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 28f0a94c95859b52f929a40584694c73]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="MenuContent"]/a[2]"}
-  (Session info: chrome=121.0.6167.161)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=121.0.6167.184)
 Build info: version: '4.16.1', revision: '9b4c83354e'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c5fd807834168ff0bb02d6afa6b885e1, findElement {using=xpath, value=//*[@id="MenuContent"]/a[2]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56124}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56124/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c5fd807834168ff0bb02d6afa6b885e1
+Command: [28f0a94c95859b52f929a40584694c73, getCurrentUrl {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.184, chrome: {chromedriverVersion: 121.0.6167.184 (057a8ae7deb..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60707}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60707/devtoo..., se:cdpVersion: 121.0.6167.184, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 28f0a94c95859b52f929a40584694c73
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -171,12 +171,10 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-at Object_repository.Homepage.sign_in(Homepage.java:16)
-at jpetstore_reg_POM.jpetstore_reg_POM.AppTest.invalid_application(AppTest.java:133)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+at org.openqa.selenium.remote.RemoteWebDriver.getCurrentUrl(RemoteWebDriver.java:317)
+at jpetstore_reg_POM.jpetstore_reg_POM.AppTest.invalid_application(AppTest.java:170)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -207,11 +205,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalid_application -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:jpetstore_reg_POM.jpetstore_reg_POM.AppTest@28701274]" started-at="2024-02-12T10:41:41 EST" name="teardown" finished-at="2024-02-12T10:41:43 EST" duration-ms="1883" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:jpetstore_reg_POM.jpetstore_reg_POM.AppTest@28701274]" started-at="2024-02-17T12:50:45 EST" name="teardown" finished-at="2024-02-17T12:50:46 EST" duration-ms="848" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
