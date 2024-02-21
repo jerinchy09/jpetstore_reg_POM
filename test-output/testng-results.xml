@@ -1,38 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="0" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-17T12:50:23 EST" name="Suite" finished-at="2024-02-17T12:50:46 EST" duration-ms="23071">
+  <suite started-at="2024-02-21T09:18:24 EST" name="Default suite" finished-at="2024-02-21T09:18:30 EST" duration-ms="5421">
     <groups>
     </groups>
-    <test started-at="2024-02-17T12:50:23 EST" name="Test" finished-at="2024-02-17T12:50:46 EST" duration-ms="23071">
+    <test started-at="2024-02-21T09:18:24 EST" name="Default test" finished-at="2024-02-21T09:18:30 EST" duration-ms="5421">
       <class name="jpetstore_reg_POM.jpetstore_reg_POM.AppTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:jpetstore_reg_POM.jpetstore_reg_POM.AppTest@28701274]" started-at="2024-02-17T12:50:23 EST" name="setup" finished-at="2024-02-17T12:50:29 EST" duration-ms="5992" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="setup()[pri:0, instance:jpetstore_reg_POM.jpetstore_reg_POM.AppTest@557caf28]" started-at="2024-02-21T09:18:24 EST" name="setup" finished-at="2024-02-21T09:18:27 EST" duration-ms="2869" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="valid_application(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:jpetstore_reg_POM.jpetstore_reg_POM.AppTest@28701274]" started-at="2024-02-17T12:50:29 EST" name="valid_application" data-provider="accountInfo" finished-at="2024-02-17T12:50:38 EST" duration-ms="9317" status="PASS">
+        <test-method signature="valid_application(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:jpetstore_reg_POM.jpetstore_reg_POM.AppTest@557caf28]" started-at="2024-02-21T09:18:27 EST" name="valid_application" data-provider="accountInfo" finished-at="2024-02-21T09:18:30 EST" duration-ms="2143" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[zara]]>
+                <![CDATA[zarjhga]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[tasnim]]>
+                <![CDATA[tajsnim]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[zara@gmail.com]]>
+                <![CDATA[zarjhja@gmail.com]]>
               </value>
             </param>
             <param index="3">
@@ -76,89 +69,28 @@
               </value>
             </param>
           </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- valid_application -->
-        <test-method signature="invalid_application(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:jpetstore_reg_POM.jpetstore_reg_POM.AppTest@28701274]" started-at="2024-02-17T12:50:38 EST" name="invalid_application" data-provider="Invalid_accountInfo" finished-at="2024-02-17T12:50:45 EST" depends-on-methods="jpetstore_reg_POM.jpetstore_reg_POM.AppTest.valid_application" duration-ms="6785" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[gff]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[tas]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[123]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[NC,Usa]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[CLT]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[NC]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[123]]>
-              </value>
-            </param>
-            <param index="9">
-              <value>
-                <![CDATA[USA]]>
-              </value>
-            </param>
-            <param index="10">
-              <value>
-                <![CDATA[public void jpetstore_reg_POM.jpetstore_reg_POM.AppTest.invalid_application(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.InterruptedException,java.io.IOException]]>
-              </value>
-            </param>
-          </params>
           <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
               <![CDATA[no such window: target window already closed
 from unknown error: web view not found
-  (Session info: chrome=121.0.6167.184)
+  (Session info: chrome=121.0.6167.185)
 Build info: version: '4.16.1', revision: '9b4c83354e'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [28f0a94c95859b52f929a40584694c73, getCurrentUrl {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.184, chrome: {chromedriverVersion: 121.0.6167.184 (057a8ae7deb..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60707}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60707/devtoo..., se:cdpVersion: 121.0.6167.184, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 28f0a94c95859b52f929a40584694c73]]>
+Command: [8621832087df03240c8dc9d29720eb95, findElement {using=name, value=account.country}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.185, chrome: {chromedriverVersion: 121.0.6167.184 (057a8ae7deb..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63343}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63343/devtoo..., se:cdpVersion: 121.0.6167.185, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8621832087df03240c8dc9d29720eb95]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
 from unknown error: web view not found
-  (Session info: chrome=121.0.6167.184)
+  (Session info: chrome=121.0.6167.185)
 Build info: version: '4.16.1', revision: '9b4c83354e'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [28f0a94c95859b52f929a40584694c73, getCurrentUrl {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.184, chrome: {chromedriverVersion: 121.0.6167.184 (057a8ae7deb..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60707}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60707/devtoo..., se:cdpVersion: 121.0.6167.184, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 28f0a94c95859b52f929a40584694c73
+Command: [8621832087df03240c8dc9d29720eb95, findElement {using=name, value=account.country}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.185, chrome: {chromedriverVersion: 121.0.6167.184 (057a8ae7deb..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63343}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63343/devtoo..., se:cdpVersion: 121.0.6167.185, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8621832087df03240c8dc9d29720eb95
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -171,10 +103,12 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
-at org.openqa.selenium.remote.RemoteWebDriver.getCurrentUrl(RemoteWebDriver.java:317)
-at jpetstore_reg_POM.jpetstore_reg_POM.AppTest.invalid_application(AppTest.java:170)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+at Object_repository.Register.valid_reg_accountInfo(Register.java:69)
+at jpetstore_reg_POM.jpetstore_reg_POM.AppTest.valid_application(AppTest.java:98)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -208,12 +142,46 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
+        </test-method> <!-- valid_application -->
+        <test-method signature="invalid_application(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:jpetstore_reg_POM.jpetstore_reg_POM.AppTest@557caf28]" started-at="2024-02-21T09:18:30 EST" name="invalid_application" finished-at="2024-02-21T09:18:30 EST" depends-on-methods="jpetstore_reg_POM.jpetstore_reg_POM.AppTest.valid_application" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method jpetstore_reg_POM.jpetstore_reg_POM.AppTest.invalid_application() on instance jpetstore_reg_POM.jpetstore_reg_POM.AppTest@557caf28 depends on not successfully finished methods 
+[jpetstore_reg_POM.jpetstore_reg_POM.AppTest.valid_application() on instance jpetstore_reg_POM.jpetstore_reg_POM.AppTest@557caf28]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method jpetstore_reg_POM.jpetstore_reg_POM.AppTest.invalid_application() on instance jpetstore_reg_POM.jpetstore_reg_POM.AppTest@557caf28 depends on not successfully finished methods 
+[jpetstore_reg_POM.jpetstore_reg_POM.AppTest.valid_application() on instance jpetstore_reg_POM.jpetstore_reg_POM.AppTest@557caf28]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
         </test-method> <!-- invalid_application -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:jpetstore_reg_POM.jpetstore_reg_POM.AppTest@28701274]" started-at="2024-02-17T12:50:45 EST" name="teardown" finished-at="2024-02-17T12:50:46 EST" duration-ms="848" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:jpetstore_reg_POM.jpetstore_reg_POM.AppTest@557caf28]" started-at="2024-02-21T09:18:30 EST" name="teardown" finished-at="2024-02-21T09:18:30 EST" duration-ms="344" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- jpetstore_reg_POM.jpetstore_reg_POM.AppTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

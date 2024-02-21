@@ -6,7 +6,7 @@
       <class name="jpetstore_reg_POM.jpetstore_reg_POM.AppTest">
         <methods>
           <include name="invalid_application"/>
-          <include name="valid_application"/>
+          <include name="valid_application" invocation-numbers="0"/>
           <include name="setup"/>
           <include name="teardown"/>
         </methods>
