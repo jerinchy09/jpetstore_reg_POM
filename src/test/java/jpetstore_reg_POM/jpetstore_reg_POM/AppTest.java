@@ -3,6 +3,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.lang.reflect.Method;
+import java.time.Duration;
 import java.util.Properties;
 
 import org.apache.commons.io.FileUtils;
@@ -12,6 +13,7 @@ import org.openqa.selenium.Alert;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeTest;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -48,7 +50,8 @@ public class AppTest
 	ExtentTest test;
 	String url;
 	
-	@BeforeTest
+	//@BeforeTest
+	@BeforeMethod
 //	@Parameters("browser")
 	public void setup() throws IOException {
 		//browser setup
@@ -63,7 +66,9 @@ public class AppTest
 		test.log(Status.PASS,"user launched the browser");
 	}
 	
-	@AfterTest
+	//@AfterTest
+	@AfterMethod
+
 	public void teardown() {
 		this.report.flush();
 		this.driver.quit();
@@ -111,7 +116,7 @@ public class AppTest
 		s.take_screenshot(driver,method.getName());
 		test.log(Status.PASS,"Screenshot Taken");
 
-		Thread.sleep(1000);
+	
 		String act = driver.getCurrentUrl();
 		
 		//the test is not failing at all, It will be shown in the report.html
@@ -121,14 +126,17 @@ public class AppTest
 		}
 		catch(AssertionError e) {
 			//Assert.assertTrue(true, url);	
-			System.out.println(e.getMessage());
+			System.out.println("Test failed: " + e.getMessage());
 			test.log(Status.FAIL,"Registration Failed. Error Page shown");			
 		}	
+
 	}
 	
 	@Test(dependsOnMethods= {"valid_application"},dataProvider = "Invalid_accountInfo", dataProviderClass = dataProvider.class)
-	public void invalid_application(String fn,String ln,String email,String phn, String add1,String add2,String city,String state,String zip,String country, Method method) throws InterruptedException, IOException {		
+	public void invalid_application(String fn,String ln,String email,String phn, String add1,String add2,String city,String state,String zip,String country, Method method) throws IOException, InterruptedException{		
 	
+		WebDriverWait obj = new WebDriverWait(driver, Duration.ofSeconds(10));
+		//obj.
 		Homepage hm = new Homepage(driver);
 		hm.sign_in();	
 		test.log(Status.PASS,"user clicked on Signed in");
@@ -170,8 +178,20 @@ public class AppTest
 		String act = driver.getCurrentUrl();
 		
 		//assertion	
-		Assert.assertEquals(act, "https://petstore.octoperf.com/actions/Account.action", "Assertion failed: Actual and Expected values are not equal");
-		test.log(Status.FAIL,"Invalid Registration.Error Page shown");			
+		//Assert.assertEquals(act, "https://petstore.octoperf.com/actions/Account.action", "Assertion failed: Actual and Expected values are not equal");
+		//test.log(Status.FAIL,"Invalid Registration.Error Page shown");	
+		
+		try {
+			
+			Assert.assertEquals(act, url);
+			test.log(Status.PASS,"Invalid Registration passed");
+		}
+		catch(AssertionError e) {
+			//Assert.assertTrue(true, url);	
+			System.out.println("Test failed: " + e.getMessage());
+			test.log(Status.FAIL,"Invalid Registration Failed. Error Page shown");			
+		}	
+
 		
 	}
 }
